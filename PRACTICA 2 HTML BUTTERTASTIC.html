@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUTTERTASTIC</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color:#FFF8DC;
+            padding: 50px;
+            text-align: center;
+            font-size: 35px;
+            color:#000000(24, 7, 21, 0.055);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 40%;
+            height: 400px;
+            /* only for demonstration, should be removed */
+            background:#FF8C00
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color:#FF69B4;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="C:\Users\USER\Desktop/ORGANIC BAKERY.png"width="500px" height="500px">
+    <header>
+        <label for="Input1">CONTACTANOS</label>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">PASTELERIA</a></li>
+                <li><a href="#">PANADERIA</a></li>
+                <li><a href="#">EVENTOS</a></li>
+                <li><a href="#">SERVICIO A DOMICILIO</a></li>
+                <a href="file:///C:/Users/USER/Desktop/LAUNCH%20X/Practica%20html%20Buttertastic.html" target="blank">sucursales
+
+                </a>
+                <br>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>BUTTERTASTIC</h1>
+            <p>Panaderia  y pasteleria  mexicana dedicada 100% a elaboracion organica y artesanales</p>
+        </article>
+    </section>
+   
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <hr>
+   
+
+    <hr>
+
+    <h2>SABOR</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="VAINILLA">
+    <label for="topping1">GOURMET</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="MERMELADA NUTELLA">
+    <label for="topping2">QUESOS</label><br>
+    
+
+
+    
+    <h2>TIPO DE HARINA</h2>
+   
+    <input type="checkbox" id="topping1" name="topping1" value="VAINILLA">
+    <label for="topping1">Tradicional</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="MERMELADA NUTELLA">
+    <label for="topping2">Organica</label><br>
+  
+
+    </label><br>
+    </datalist>
+    <br><br>
+
+
+    
+    <hr>
+
+    <h2>FECHA DEL EVENTO</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+    
+    <h2>SI CUENTAS CON UN DISEÑO ADJUNTALO AQUI</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    
+    <h2>COLOR PASTEL</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>KG PASTEL</h2>
+    <label for="vol">KG de pastel(entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+       
+        <hr>
+    <!-- Formularios -->
+    <h2>ENVIANOS TUS DATOS DE CONTACTO</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    
+
+</body>
+
+</html>
